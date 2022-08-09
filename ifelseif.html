@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập if else if</title>
+</head>
+<body>
+<script>
+  let TenDangNhap = prompt("Nhập tên đăng nhập của bạn:");
+
+  let a = TenDangNhap === "Admin";
+  let d = TenDangNhap === "";
+  if (a) {
+    let Matkhau = prompt("Nhập mật khẩu đăng nhập của bạn:");
+    let b = Matkhau === "TheMaster";
+    let c = Matkhau === "";
+    if (b) {
+      alert("Welcome");
+    } else if (c) {
+      alert("Canceled");
+    } else {
+      alert("Wrong password")
+    }
+  } else if (d) {
+    alert("Canceled")
+  } else {
+    alert("I don't know you")
+  }
+</script>
+</body>
+</html>
