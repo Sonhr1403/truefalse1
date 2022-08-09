@@ -6,26 +6,27 @@
 </head>
 <body>
 <script>
-  let TenDangNhap = prompt("Nhập tên đăng nhập của bạn:");
+    let TenDangNhap = prompt("Nhập tên đăng nhập của bạn:");
 
-  let a = TenDangNhap === "Admin";
-  let d = TenDangNhap === "";
-  if (a) {
-    let Matkhau = prompt("Nhập mật khẩu đăng nhập của bạn:");
-    let b = Matkhau === "TheMaster";
-    let c = Matkhau === "";
-    if (b) {
-      alert("Welcome");
-    } else if (c) {
-      alert("Canceled");
+    let a = TenDangNhap === "Admin";
+    let d = TenDangNhap === "";
+
+    if (a) {
+        let Matkhau = prompt("Nhập mật khẩu đăng nhập của bạn:");
+        let b = Matkhau === "TheMaster";
+        let c = Matkhau === "";
+        if (b) {
+            alert("Welcome");
+        } else if (c) {
+            alert("Canceled");
+        } else {
+            alert("Wrong password")
+        }
+    } else if (d) {
+        alert("Canceled")
     } else {
-      alert("Wrong password")
+        alert("I don't know you")
     }
-  } else if (d) {
-    alert("Canceled")
-  } else {
-    alert("I don't know you")
-  }
 </script>
 </body>
 </html>
